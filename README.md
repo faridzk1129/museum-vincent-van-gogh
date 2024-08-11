@@ -1,4 +1,6 @@
-# Web view that can be seen from all devices
+# vincent van gogh museum landing page website
+
+## Web view that can be seen from all devices
 
 ## Desktop
 ![Desktop View](/src/images/view%20all%20device/desktop.png)
