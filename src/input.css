@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-all: #e0f4ff;
+  --bg-2: #b4c5ff;
+  --bg-button-3: #7e9cff;
+  --smooth-dark: #222;
+}
+
+@layer components {
+  .beforeComponent {
+    @apply relative before:w-0 before:hover:w-full before:h-1 before:absolute before:bg-black before:rounded-full before:-bottom-2 before:duration-500;
+  }
+  .buttonNav {
+    @apply h-full border-Navbar-textOther border-[1px] rounded-full px-7 text-Navbar-textOther flex justify-center items-center font-semibold  text-[12px];
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e1d6c2;
+  border-radius: 12px;
+}

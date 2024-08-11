@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>museum</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    class="w-full overflow-x-hidden bg-BgContainer px-3 flex justify-center lg:h-screen md:px-16 lg:px-12 relative"
+  >
+    <!-- nav -->
+    <nav class="w-[100%] fixed top-4 px-3 z-10 lg:absolute md:px-16 lg:px-12">
+      <div
+        class="w-full h-[54px] border-Navbar-textOther border-[1px] rounded-full flex overflow-hidden items-center gap-2 p-1 relative text-[12px]"
+      >
+        <div
+          class="bg-Navbar-button1 h-full rounded-full font-semibold text-Navbar-textOther flex justify-center items-center w-full lg:w-[388px]"
+        >
+          Vincent Van Gogh
+        </div>
+        <button
+          type="button"
+          class="bg-Navbar-button3 buttonNav lg:hidden"
+          id="buttonMenuNav"
+        >
+          Menu
+        </button>
+        <div class="hidden lg:block w-full h-full relative">
+          <div class="flex w-full h-full gap-1">
+            <button
+              type="button"
+              class="bg-Navbar-button2 buttonNav text-black"
+            >
+              Collections
+            </button>
+            <button type="button" class="bg-Navbar-button3 buttonNav">
+              Our Mission
+            </button>
+            <button type="button" class="bg-Navbar-button3 buttonNav">
+              Events
+            </button>
+            <button
+              type="button"
+              class="bg-Navbar-button3 buttonNav absolute right-0"
+            >
+              Contact Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hidden nav -->
+    <nav
+      class="w-screen h-screen bg-Navbar-textOther fixed z-20 font-Montserrat hidden"
+      id="hiddenNav"
+    >
+      <button
+        type="button"
+        class="text-4xl font-semibold absolute top-11 right-11 scale-125"
+        id="buttonCloseNav"
+      >
+        x
+      </button>
+      <div class="w-full h-full flex justify-center items-center">
+        <ul
+          class="font-bold flex flex-col gap-11 relative right-6 text-[#352817] text-2xl md:text-4xl"
+          id="listNav"
+        >
+          <li>
+            <a href="#collection" class="beforeComponent border-slate-900"
+              >Collection</a
+            >
+          </li>
+          <li>
+            <a href="#mission" class="beforeComponent">Our mission</a>
+          </li>
+          <li>
+            <a href="#events" class="beforeComponent">Events</a>
+          </li>
+          <li>
+            <a href="#contact" class="beforeComponent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- content -->
+    <div
+      class="w-full relative top-20 flex flex-col gap-3 md:grid md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 lg:h-[85%]"
+    >
+      <!-- content 1 -->
+      <div
+        class="relative w-full h-[428px] bg-Section1-container rounded-3xl md:col-span-2 lg:row-span-2 lg:col-span-1 lg:h-full text-Section1-textOther overflow-hidden"
+        id="collection"
+      >
+        <div class="h-full w-full px-3 py-4 flex flex-col gap-4 relative">
+          <!-- text -->
+          <div class="p-2 flex flex-col gap-4">
+            <h2 class="inline-flex">
+              <span
+                class="border border-black rounded-full px-1 font-Montserrat font-normal text-sm tracking-tighter"
+                >CONGRETEVE STREET</span
+              >
+            </h2>
+            <h1
+              class="text-lg font-Lora font-extrabold tracking-tight md:text-3xl"
+            >
+              Alternate
+              <span class="underline">realms</span>
+            </h1>
+          </div>
+          <!-- image -->
+          <div
+            class="w-full h-[216px] md:h-[236px] lg:h-[70%] self-center block"
+          >
+            <img
+              src="../src/images/realism.jpg"
+              alt="realism"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <!-- line -->
+          <span
+            class="w-[115%] h-[1px] bg-Section1-textOther rounded-full absolute bottom-12 self-center"
+          ></span>
+
+          <!-- button get started -->
+          <div class="w-full absolute left-0 bottom-2">
+            <button type="button" class="w-full">
+              <div class="w-full flex justify-between px-4 group">
+                <span class="text-[12px] uppercase tracking-tight"
+                  >Get Started</span
+                >
+                <svg
+                  width="19"
+                  height="30"
+                  viewBox="0 0 59 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-1 transition"
+                >
+                  <path
+                    d="M2 13C0.895431 13 9.65645e-08 13.8954 0 15C-9.65645e-08 16.1046 0.89543 17 2 17L2 13ZM58.4142 16.4142C59.1953 15.6332 59.1953 14.3668 58.4142 13.5858L45.6863 0.857868C44.9052 0.0768195 43.6389 0.0768194 42.8579 0.857868C42.0768 1.63892 42.0768 2.90525 42.8579 3.6863L54.1716 15L42.8579 26.3137C42.0768 27.0948 42.0768 28.3611 42.8579 29.1421C43.6389 29.9232 44.9052 29.9232 45.6863 29.1421L58.4142 16.4142ZM2 17L57 17L57 13L2 13L2 17Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- content 2 -->
+      <div
+        class="w-full h-[428px] bg-Section2-container rounded-3xl md:col-span-2 lg:row-span-1 lg:col-span-2 lg:h-full overflow-hidden"
+        id="mission"
+      >
+        <div
+          class="h-full w-full px-3 py-4 flex flex-col gap-4 lg:gap-8 relative lg:flex-row md:flex-row text-Section2-textOther"
+        >
+          <!-- text -->
+          <div class="p-2 flex flex-col gap-4 relative lg:top-1">
+            <h2 class="inline-flex">
+              <span
+                class="border border-Section2-textOther rounded-full px-1 font-Montserrat font-normal text-sm tracking-tighter"
+                >EUROPEANA</span
+              >
+            </h2>
+            <h1
+              class="text-lg font-Lora font-extrabold tracking-tight md:text-3xl"
+            >
+              The Potato
+              <span class="underline">Eaters</span>
+            </h1>
+            <p
+              class="uppercase text-sm hidden md:inline-block md:text-[12px] md:max-w-2xl lg:max-w-7xl md:mt-5 lg:mt-0 font-semibold leading-loose lg:leading-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              error repellendus sunt cum Lorem ipsum dolor sit amet. Lorem ipsum
+              dolor sit amet.
+            </p>
+          </div>
+          <!-- image -->
+          <div
+            class="w-full h-[216px] md:h-[292px] lg:h-[72%] self-center block relative lg:bottom-7 md:bottom-10"
+          >
+            <img
+              src="../src/images/thepotatoeaters.jpg"
+              alt="thepotatoeaters"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <!-- line -->
+          <span
+            class="w-[150%] h-[1px] bg-Section1-textOther rounded-full absolute bottom-12 self-center left-0"
+          ></span>
+          <!-- button get started -->
+          <div class="w-full absolute left-0 bottom-2">
+            <button type="button" class="w-full">
+              <div class="w-full flex justify-between px-4 group">
+                <span class="text-[12px] uppercase tracking-tight"
+                  >Get Started</span
+                >
+                <svg
+                  width="19"
+                  height="30"
+                  viewBox="0 0 59 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-1 transition"
+                >
+                  <path
+                    d="M2 13C0.895431 13 9.65645e-08 13.8954 0 15C-9.65645e-08 16.1046 0.89543 17 2 17L2 13ZM58.4142 16.4142C59.1953 15.6332 59.1953 14.3668 58.4142 13.5858L45.6863 0.857868C44.9052 0.0768195 43.6389 0.0768194 42.8579 0.857868C42.0768 1.63892 42.0768 2.90525 42.8579 3.6863L54.1716 15L42.8579 26.3137C42.0768 27.0948 42.0768 28.3611 42.8579 29.1421C43.6389 29.9232 44.9052 29.9232 45.6863 29.1421L58.4142 16.4142ZM2 17L57 17L57 13L2 13L2 17Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- content 3 -->
+      <div
+        class="w-full h-[428px] bg-Section3-container rounded-3xl md:col-span-1 lg:col-span-1 lg:row-span-1 lg:h-full overflow-hidden"
+        id="events"
+      >
+        <div
+          class="h-full w-full px-3 py-4 flex flex-col gap-4 lg:gap-2 relative text-Section3-textOther"
+        >
+          <!-- image -->
+          <div class="w-full h-[200px] lg:h-[42%] self-center block">
+            <img
+              src="../src/images/portrait.jpg"
+              alt="portrait"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <!-- sub text and circle -->
+          <div class="w-full px-2">
+            <div class="w-full flex justify-between">
+              <h1
+                class="text-xl font-Lora font-extrabold tracking-tight lg:text-2xl"
+              >
+                Portrait
+              </h1>
+              <div class="flex py-2">
+                <span
+                  class="w-4 h-4 rounded-full bg-Section3-textOther block"
+                ></span>
+                <span
+                  class="w-4 h-4 rounded-full bg-Section3-textOther block"
+                ></span>
+                <span
+                  class="w-4 h-4 rounded-full bg-Section3-textOther block"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <!-- paragraph -->
+          <p
+            class="uppercase text-[12px] font-semibold px-2 lg:leading-4 sm:text-[12px] lg:text-[10px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error
+            repellendus sunt cum Lorem ipsum Lorem ipsum dolor
+          </p>
+          <!-- line -->
+          <span
+            class="w-[115%] h-[1px] bg-Section1-textOther rounded-full absolute bottom-12 self-center"
+          ></span>
+
+          <!-- button get started -->
+          <div class="w-full absolute left-0 bottom-2">
+            <button type="button" class="w-full">
+              <div class="w-full flex justify-between px-4 group">
+                <span class="text-[12px] uppercase tracking-tight"
+                  >Get Started</span
+                >
+                <svg
+                  width="19"
+                  height="30"
+                  viewBox="0 0 59 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-1 transition"
+                >
+                  <path
+                    d="M2 13C0.895431 13 9.65645e-08 13.8954 0 15C-9.65645e-08 16.1046 0.89543 17 2 17L2 13ZM58.4142 16.4142C59.1953 15.6332 59.1953 14.3668 58.4142 13.5858L45.6863 0.857868C44.9052 0.0768195 43.6389 0.0768194 42.8579 0.857868C42.0768 1.63892 42.0768 2.90525 42.8579 3.6863L54.1716 15L42.8579 26.3137C42.0768 27.0948 42.0768 28.3611 42.8579 29.1421C43.6389 29.9232 44.9052 29.9232 45.6863 29.1421L58.4142 16.4142ZM2 17L57 17L57 13L2 13L2 17Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- content 4 -->
+      <div
+        class="w-full h-[428px] bg-Section4-container rounded-3xl md:col-span-1 lg:col-span-1 lg:row-span-1 lg:h-full overflow-hidden"
+        id="contact"
+      >
+        <div class="h-full w-full p-5 flex flex-col gap-4 relative">
+          <!-- avatar circle -->
+          <div
+            class="w-14 h-14 absolute right-5 top-8 max-md:scale-110 max-md:right-8"
+          >
+            <img
+              src="../src/images/avatar.jpg"
+              alt="avatar"
+              class="w-full h-full object-cover rounded-full"
+            />
+          </div>
+          <!-- text and border -->
+          <h2 class="inline-flex">
+            <span
+              class="border border-Section2-textOther rounded-full px-1 font-Montserrat font-normal text-sm tracking-tighter"
+              >EUROPEANA</span
+            >
+          </h2>
+          <h1
+            class="text-lg font-Lora font-extrabold tracking-tight mt-16 lg:mt-3 md:text-2xl"
+          >
+            Vintage
+            <span class="underline">Eaters</span>
+          </h1>
+          <p
+            class="uppercase text-[12px] font-semibold lg:leading-4 sm:text-[12px] lg:text-[10px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error
+            repellendus sunt cum Lorem ipsum Lorem ipsum dolor
+          </p>
+          <div
+            class="w-full font-semibold uppercase flex justify-between border-[1px] border-black py-2 text-sm lg:py-1 lg:text-[10px] border-r-0 border-l-0 mt-12 lg:-mt-1"
+          >
+            <h2>public domain</h2>
+            <h2>netherlands</h2>
+          </div>
+          <span
+            class="w-full h-[1px] border-black border-t-[1px] lg:-mt-2"
+          ></span>
+
+          <!-- line -->
+          <span
+            class="w-[115%] h-[1px] bg-Section1-textOther rounded-full absolute bottom-12 self-center"
+          ></span>
+
+          <!-- button get started -->
+          <div class="w-full absolute left-0 bottom-2">
+            <button type="button" class="w-full">
+              <div class="w-full flex justify-between px-4 group">
+                <span class="text-[12px] uppercase tracking-tight"
+                  >Get Started</span
+                >
+                <svg
+                  width="19"
+                  height="30"
+                  viewBox="0 0 59 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-1 transition"
+                >
+                  <path
+                    d="M2 13C0.895431 13 9.65645e-08 13.8954 0 15C-9.65645e-08 16.1046 0.89543 17 2 17L2 13ZM58.4142 16.4142C59.1953 15.6332 59.1953 14.3668 58.4142 13.5858L45.6863 0.857868C44.9052 0.0768195 43.6389 0.0768194 42.8579 0.857868C42.0768 1.63892 42.0768 2.90525 42.8579 3.6863L54.1716 15L42.8579 26.3137C42.0768 27.0948 42.0768 28.3611 42.8579 29.1421C43.6389 29.9232 44.9052 29.9232 45.6863 29.1421L58.4142 16.4142ZM2 17L57 17L57 13L2 13L2 17Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hidden bottom  -->
+    <div class="absolute w-full h-32 -bottom-32 lg:hidden"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
